@@ -4,4 +4,4 @@ services:
     envFrom:
       - file: .env # This line specifies to use the environment variables from the .env file
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 8080
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 8080
