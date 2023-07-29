@@ -4,7 +4,7 @@ from .routers import post, user, auth, vote
 from . import swagger_config
 from .config import settings
 from fastapi.middleware.cors import CORSMiddleware
-# models.Base.metadata.create_all(bind=engine) # tells the sqlalchemy to check the tables(models) and create them(if not exist) 
+models.Base.metadata.create_all(bind=engine) # tells the sqlalchemy to check the tables(models) and create them(if not exist) 
 
 app = swagger_config.app
 
